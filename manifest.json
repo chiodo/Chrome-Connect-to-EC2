@@ -1,0 +1,17 @@
+{
+  "name": "Better AWS Connect",
+  "description": "Connect to EC2 hosts from AWS MC",
+  "version": "0.0.3",
+  "permissions": ["contextMenus","tabs"],
+  "content_scripts": [
+  	{
+  		"matches": ["http://vixtest.com/*", "https://console.aws.amazon.com/*"],
+  		"js": ["scripts/jquery1.4.4.min.js", "ssh_select.js"]
+  	}
+  ],
+  
+  "icons": {
+  	"16":"icon/16.png",
+  	"128":"icon/128.jpg"
+  }
+}
